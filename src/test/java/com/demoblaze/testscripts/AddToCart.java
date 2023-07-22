@@ -31,6 +31,5 @@ public class AddToCart extends Base
 		cu.acceptAlert(driver);
 		hp.getCartButton().click();
 		Assert.assertTrue(cu.verifyProductInCart(pn, driver).isDisplayed());
-	//	Assert.assertTrue(false);
 	}
 }

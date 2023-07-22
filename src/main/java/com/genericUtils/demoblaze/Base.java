@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -43,7 +44,9 @@ public class Base {
 		if(fl.getPropetyData("browser").equals("chrome"))
     //      if(bn.equals("chrome"))
 		{
-			driver=new ChromeDriver();
+			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			driver=new ChromeDriver(options);
 		}
 
 		if(fl.getPropetyData("browser").equals("edge"))
@@ -52,9 +55,9 @@ public class Base {
 			driver=new EdgeDriver();
 		}
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(fl.getPropetyData("URL"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Reporter.log("Launched the Browser",true);
 	}
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Launched the Browser]]>
@@ -16,27 +16,67 @@
     <line>
       <![CDATA[Logged out from the app]]>
     </line>
+    <line>
+      <![CDATA[Launched the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Logged in to the app]]>
+    </line>
+    <line>
+      <![CDATA[Logged out from the app]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-19T22:47:40 IST" name="Default suite" finished-at="2022-12-19T22:48:05 IST" duration-ms="25424">
+  <suite started-at="2023-07-22T13:41:18 IST" name="Suite" finished-at="2023-07-22T13:41:55 IST" duration-ms="37773">
     <groups>
     </groups>
-    <test started-at="2022-12-19T22:47:40 IST" name="Default test" finished-at="2022-12-19T22:48:05 IST" duration-ms="25424">
-      <class name="com.demoblaze.testscripts.ContactsDemoblaze">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:47:40 IST" name="beforeSuite" finished-at="2022-12-19T22:47:49 IST" duration-ms="8657" status="PASS">
+    <test started-at="2023-07-22T13:41:18 IST" name="Test" finished-at="2023-07-22T13:41:55 IST" duration-ms="37773">
+      <class name="com.demoblaze.testscripts.AddToCart">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.demoblaze.testscripts.AddToCart@59505b48]" started-at="2023-07-22T13:41:40 IST" name="beforeSuite" finished-at="2023-07-22T13:41:43 IST" duration-ms="3103" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launched the Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:47:50 IST" name="loginApp" finished-at="2022-12-19T22:47:54 IST" duration-ms="3953" status="PASS">
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.demoblaze.testscripts.AddToCart@59505b48]" started-at="2023-07-22T13:41:43 IST" name="loginApp" finished-at="2023-07-22T13:41:47 IST" duration-ms="4083" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in to the app]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="contactDemoblazeTest(java.lang.String,java.lang.String)[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:47:54 IST" name="contactDemoblazeTest" data-provider="contactTest" finished-at="2022-12-19T22:47:55 IST" duration-ms="1499" status="PASS">
+        <test-method signature="addCart()[pri:0, instance:com.demoblaze.testscripts.AddToCart@59505b48]" started-at="2023-07-22T13:41:47 IST" name="addCart" finished-at="2023-07-22T13:41:54 IST" duration-ms="6705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCart -->
+        <test-method is-config="true" signature="logutApp()[pri:0, instance:com.demoblaze.testscripts.AddToCart@59505b48]" started-at="2023-07-22T13:41:54 IST" name="logutApp" finished-at="2023-07-22T13:41:55 IST" duration-ms="905" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged out from the app]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logutApp -->
+        <test-method is-config="true" signature="afterSuit()[pri:0, instance:com.demoblaze.testscripts.AddToCart@59505b48]" started-at="2023-07-22T13:41:55 IST" name="afterSuit" finished-at="2023-07-22T13:41:55 IST" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuit -->
+      </class> <!-- com.demoblaze.testscripts.AddToCart -->
+      <class name="com.demoblaze.testscripts.ContactsDemoblaze">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:18 IST" name="beforeSuite" finished-at="2023-07-22T13:41:22 IST" duration-ms="4678" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launched the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:23 IST" name="loginApp" finished-at="2023-07-22T13:41:28 IST" duration-ms="4258" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged in to the app]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method signature="contactDemoblazeTest(java.lang.String,java.lang.String)[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:28 IST" name="contactDemoblazeTest" data-provider="contactTest" finished-at="2023-07-22T13:41:29 IST" duration-ms="1472" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,21 +92,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactDemoblazeTest -->
-        <test-method is-config="true" signature="logutApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:47:55 IST" name="logutApp" finished-at="2022-12-19T22:47:57 IST" duration-ms="2298" status="PASS">
+        <test-method is-config="true" signature="logutApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:29 IST" name="logutApp" finished-at="2023-07-22T13:41:31 IST" duration-ms="2276" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out from the app]]>
             </line>
           </reporter-output>
         </test-method> <!-- logutApp -->
-        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:47:57 IST" name="loginApp" finished-at="2022-12-19T22:48:01 IST" duration-ms="3914" status="PASS">
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:31 IST" name="loginApp" finished-at="2023-07-22T13:41:37 IST" duration-ms="5143" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in to the app]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="contactDemoblazeTest(java.lang.String,java.lang.String)[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:48:01 IST" name="contactDemoblazeTest" data-provider="contactTest" finished-at="2022-12-19T22:48:03 IST" duration-ms="1387" status="PASS">
+        <test-method signature="contactDemoblazeTest(java.lang.String,java.lang.String)[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:37 IST" name="contactDemoblazeTest" data-provider="contactTest" finished-at="2023-07-22T13:41:38 IST" duration-ms="1480" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,18 +122,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactDemoblazeTest -->
-        <test-method is-config="true" signature="logutApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:48:03 IST" name="logutApp" finished-at="2022-12-19T22:48:04 IST" duration-ms="1718" status="PASS">
+        <test-method is-config="true" signature="logutApp()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:38 IST" name="logutApp" finished-at="2023-07-22T13:41:39 IST" duration-ms="1435" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out from the app]]>
             </line>
           </reporter-output>
         </test-method> <!-- logutApp -->
-        <test-method is-config="true" signature="afterSuit()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2c1b194a]" started-at="2022-12-19T22:48:04 IST" name="afterSuit" finished-at="2022-12-19T22:48:05 IST" duration-ms="880" status="PASS">
+        <test-method is-config="true" signature="afterSuit()[pri:0, instance:com.demoblaze.testscripts.ContactsDemoblaze@2dc54ad4]" started-at="2023-07-22T13:41:39 IST" name="afterSuit" finished-at="2023-07-22T13:41:40 IST" duration-ms="671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuit -->
       </class> <!-- com.demoblaze.testscripts.ContactsDemoblaze -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
