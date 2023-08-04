@@ -44,9 +44,9 @@ public class Base {
 		if(fl.getPropetyData("browser").equals("chrome"))
     //      if(bn.equals("chrome"))
 		{
-			ChromeOptions options=new ChromeOptions();
-			options.addArguments("--remote-allow-origins=*");
-			driver=new ChromeDriver(options);
+//			ChromeOptions options=new ChromeOptions();
+//			options.addArguments("--remote-allow-origins=*");
+			driver=new ChromeDriver();
 		}
 
 		if(fl.getPropetyData("browser").equals("edge"))
